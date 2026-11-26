@@ -56,13 +56,17 @@ VARIABLE
     temps_rando : ENTIER
     heures : ENTIER
     minutes : ENTIER
+    time : TEXTE
 DEBUT
 
     LIRE temps_rando
     heures <- temps_rando DIV 60
     minutes <- temps_rando MOD 60
 
-    ECRIRE temps_rando donne " " heures, "h", minutes
+    time <- heure, "h", minute, "min"
+
+
+    ECRIRE temps_rando, time
 FIN
 
 ## Rendu de monnaie

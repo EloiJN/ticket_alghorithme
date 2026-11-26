@@ -45,3 +45,17 @@ VARIABLES
     SINON 
         ECRIRE "Les deux nombres sont égaux"
  FIN
+
+ ## Tarif d'une sortie
+ 
+ ALGORITHME tarif sortie
+
+VARIABLES
+    age : ENTIER
+    tarif : ENTIER
+DEBUT
+    SI age < 12 ALORS
+        tarif <- 5
+    SINON SI age >= 12 ET age <= 25 ALORS
+        tarif <-8
+    
