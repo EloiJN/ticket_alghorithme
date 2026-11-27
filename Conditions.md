@@ -48,14 +48,23 @@ VARIABLES
 
  ## Tarif d'une sortie
  
- ALGORITHME tarif sortie
+ALGORITHME tarif sortie
 
 VARIABLES
     age : ENTIER
     tarif : ENTIER
 DEBUT
+    LIRE age
+
     SI age < 12 ALORS
         tarif <- 5
     SINON SI age >= 12 ET age <= 25 ALORS
-        tarif <-8
-    
+        tarif <- 8 
+    SINON SI age >= 26 ET age <= 64 ALORS
+        tarif <- 12
+    SINON 
+        tarif <- 7
+    FIN SI
+
+    ECRIRE "Le tarif sera de : ", tarif
+FIN
